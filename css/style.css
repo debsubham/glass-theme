@@ -6,10 +6,42 @@
 
 main{
   min-height: 100vh;
-  background:linear-gradient(to right top, black, white);
+  background:linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .glass{
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to right top, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+  border-radius: 2rem;
+  backdrop-filter: blur(1rem);
+  z-index: 3;
+}
 
+.circle1, .circle2{
+  background: white;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.9),rgba(255,255,255,0.1));
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.circle1{
+  height:150px;
+  width:150px;
+  position:absolute;
+  top:3%;
+  left:73%;
+}
+
+.circle2{
+  height:250px;
+  width:250px;
+  position:absolute;
+  top:60%;
+  left:10%;
 }
